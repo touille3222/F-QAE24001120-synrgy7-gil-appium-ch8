@@ -1,5 +1,6 @@
 package Appium.pages;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,5 +22,9 @@ public class CompletePage {
     public String getDashboardText() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardText));
         return driver.findElement(dashboardText).getText();
+    }
+
+    public void validateOnPage() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='CHECKOUT: COMPLETE!']")));
     }
 }

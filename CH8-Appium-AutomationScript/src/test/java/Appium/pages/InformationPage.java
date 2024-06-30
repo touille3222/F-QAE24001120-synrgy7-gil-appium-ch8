@@ -29,6 +29,7 @@ public class InformationPage {
     }
 
     public void inputfirstnameField(String firstname){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(firstnameField));
         driver.findElement(firstnameField).sendKeys(firstname);
     }
 

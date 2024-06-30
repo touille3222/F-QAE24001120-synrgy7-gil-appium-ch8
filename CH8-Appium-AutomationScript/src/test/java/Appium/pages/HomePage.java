@@ -36,6 +36,7 @@ public class HomePage {
     }
 
     public void clickFilterButton(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(filterButton));
         driver.findElement(filterButton).click();
     }
 

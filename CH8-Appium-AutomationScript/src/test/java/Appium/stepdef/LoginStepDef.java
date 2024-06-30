@@ -22,7 +22,7 @@ public class LoginStepDef {
         capabilities.setCapability("automationName", "UiAutomator2");
         capabilities.setCapability("appActivity", ".MainActivity");
         capabilities.setCapability("deviceName", "Infinix HOT 11S NFC");
-        capabilities.setCapability("udid", "073262521J015262");
+        capabilities.setCapability("udid", "192.168.100.48:35315");
 
         driver = new AndroidDriver(capabilities);
     }
